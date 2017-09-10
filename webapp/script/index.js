@@ -9,11 +9,15 @@
             one: {
                 messages: [{
                         type: "1",
-                        text: "Bom dia, prin 😘😘😘"
+                        text: "Bom dia, Bebs 😘😘😘"
                     },
                     {
                         type: "1",
                         text: "Dormiu bem?"
+                    },
+                    {
+                        type: "1",
+                        text: "Ah, se vc não tiver vendo um balão verdinho no final da tela, scrolla pra baixo 👇😊"
                     }
                 ],
                 answers: [{
@@ -24,7 +28,7 @@
             two: {
                 messages: [{
                     type: "1",
-                    text: "Maravilhosidade"
+                    text: "Maravilhosidadeeeeee"
                 }, {
                     type: "1",
                     text: "feliz 2 anos de namoroooooo ❤❤❤",
@@ -40,6 +44,7 @@
                         type: "1",
                         text: "Hmmmm",
                         action: stopHeartAnimation
+
                     },
                     {
                         type: "1",
@@ -47,7 +52,7 @@
                     },
                     {
                         type: "1",
-                        text: "Eu sou mais uma CUI (Conversational User Interface)"
+                        text: "Eu sou mais uma CUI (Conversational User Interface) 🤖👾"
                     },
                     {
                         type: "1",
@@ -59,7 +64,7 @@
                     }
                 ],
                 answers: [{
-                    message: "Nossa, que inteligentao🤓",
+                    message: "Nossa, que inteligentao 🤓",
                     id: "four"
                 }, {
                     message: "O que é isso?🤔",
@@ -69,7 +74,7 @@
             four: {
                 messages: [{
                         type: "1",
-                        text: "O Ber sempre quis ser pavaozinho, ainda mais pra vc"
+                        text: "O Ber sempre quis ser pavaozinho, ainda mais pra vc 🦄"
                     },
                     {
                         type: "1",
@@ -81,7 +86,7 @@
                     }
                 ],
                 answers: [{
-                    message: "Hey, mas se vc nao eh o ber, como que vc veio me chamar de nenis ?",
+                    message: "Hey, mas se vc nao é o Ber, como que vc veio me chamar de Bebs?",
                     id: "six"
                 }]
             },
@@ -94,14 +99,14 @@
                     image: "https://static1.squarespace.com/static/572f8a5622482e952ab4082a/t/58867d1029687f26ebf3ba8c/1485208851267/c3po-omg.gif?format=1000w"
                 }],
                 answers: [{
-                    message: "Nossa, que inteligentao🤓 Me possua",
+                    message: "Nossa, que inteligentao 🤓",
                     id: "four"
                 }]
             },
             six: {
                 messages: [{
                         type: "1",
-                        text: "Busted!"
+                        text: "Busted!😫"
                     },
                     {
                         type: "1",
@@ -125,7 +130,11 @@
                     },
                     {
                         type: "1",
-                        text: "E uma coisa que sei é que o Ber jamais me deixaria ser igual ele e correr o risco de vc ter um crush por mim. Ele tem ciúmes de vc!"
+                        text: "E uma coisa que sei é que o Ber jamais me deixaria ser igual ele e correr o risco de vc ter um crush por mim."
+                    },
+                    {
+                        type: "1",
+                        text: "Ele tem ciúmes de vc!💏"
                     },
                     {
                         type: "1",
@@ -165,31 +174,60 @@
                     }
                 ],
                 answers: [{
-                    message: "Calma aí, casanova!",
+                    message: "Calma aí, casanova!😠🚨",
                     id: "ten"
                 }]
             },
             ten: {
                 messages: [{
-                    type: "1",
-                    text: "Eu sei eu sei... Eu ouvi falar que vc não trocaria o Ber nem por ele mesmo"
-                }],
+                        type: "1",
+                        text: "Eu sei eu sei... Eu ouvi falar que vc não trocaria o Ber nem por ele mesmo"
+                    },
+                    {
+                        type: "1",
+                        text: "Vcs são o resultado da conspiração do universo 🌌"
+                    }
+                ],
                 answers: [{
-                    message: "Tá tá, mas cadê o Ber?",
+                    message: "Tá tá, mas cadê o Ber?😠",
                     id: "eleven"
                 }]
             },
             eleven: {
                 messages: [{
-                    type: "3",
-                    file: ""
-                }],
+                        type: "1",
+                        text: "Vou trazer ele pra vc!"
+                    },
+                    {
+                        type: "1",
+                        text: "A gente vai conversar mais no futuro"
+                    },
+                    {
+                        type: "1",
+                        text: "Quando o Ber me fizer mais inteligente"
+                    },
+                    {
+                        type: "1",
+                        text: "Feliz dois anos de namoro, Marina!"
+                    },
+                    {
+                        type: "3",
+                        file: ""
+                    }
+                ],
                 answers: [{
-                    message: "",
+                    message: "Amo você, morzin!",
+                    id: ""
+                },
+                {
+                    message: "Tchau",
                     id: ""
                 }]
             }
         };
+
+
+
 
         function startHeartAnimation() {
             setTimeout(function() { // only to give the animation some room for breathing
@@ -245,12 +283,18 @@
                     newMessage.find('.link__text')[0].innerText = obj.text;
                     newMessage.find('.link__url')[0].href = obj.url;
 
-
                     setTimeout(function() {
                         newMessage.find('.cui__bubble')[0].classList.add("grow");
                     }, 1000);
                     return newMessage;
-                    break;
+                break;
+                case "3": // video hardcoded
+                    var newMessage = $(
+                        '<li class="cui__list__item cui__list__item--link"><div class="cui__bubble animated slideInLeft"</div><iframe width="250" height="200" src="https://www.youtube.com/embed/i_ONBDOYygk" frameborder="0" allowfullscreen></iframe></li>'
+                    );
+
+                    return newMessage;
+                break;
             }
 
         }

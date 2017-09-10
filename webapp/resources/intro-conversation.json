@@ -2,11 +2,15 @@
     one: {
         messages: [{
                 type: "1",
-                text: "Bom dia, prin 😘😘😘"
+                text: "Bom dia, Bebs 😘😘😘"
             },
             {
                 type: "1",
                 text: "Dormiu bem?"
+            },
+            {
+                type: "1",
+                text: "Ah, se vc não tiver vendo um balão verdinho no final da tela, scrolla pra baixo 👇😊"
             }
         ],
         answers: [{
@@ -17,10 +21,11 @@
     two: {
         messages: [{
             type: "1",
-            text: "Maravilhosidade"
+            text: "Maravilhosidadeeeeee"
         }, {
             type: "1",
-            text: "feliz 2 anos de namoroooooo ❤❤❤"
+            text: "feliz 2 anos de namoroooooo ❤❤❤",
+            action: startHeartAnimation
         }],
         answers: [{
             message: "Tico, como vc é lindo 😍😍😍",
@@ -30,7 +35,9 @@
     three: {
         messages: [{
                 type: "1",
-                text: "Hmmmm"
+                text: "Hmmmm",
+                action: stopHeartAnimation
+
             },
             {
                 type: "1",
@@ -38,7 +45,7 @@
             },
             {
                 type: "1",
-                text: "Eu sou mais uma CUI (Conversational User Interface)"
+                text: "Eu sou mais uma CUI (Conversational User Interface) 🤖👾"
             },
             {
                 type: "1",
@@ -50,7 +57,7 @@
             }
         ],
         answers: [{
-            message: "Nossa, que inteligentao🤓",
+            message: "Nossa, que inteligentao 🤓",
             id: "four"
         }, {
             message: "O que é isso?🤔",
@@ -60,7 +67,7 @@
     four: {
         messages: [{
                 type: "1",
-                text: "O Ber sempre quis ser pavaozinho, ainda mais pra vc"
+                text: "O Ber sempre quis ser pavaozinho, ainda mais pra vc 🦄"
             },
             {
                 type: "1",
@@ -72,7 +79,7 @@
             }
         ],
         answers: [{
-            message: "Hey, mas se vc nao eh o ber, como que vc veio me chamar de nenis ?",
+            message: "Hey, mas se vc nao é o Ber, como que vc veio me chamar de Bebs?",
             id: "six"
         }]
     },
@@ -85,14 +92,14 @@
             image: "https://static1.squarespace.com/static/572f8a5622482e952ab4082a/t/58867d1029687f26ebf3ba8c/1485208851267/c3po-omg.gif?format=1000w"
         }],
         answers: [{
-            message: "",
-            id: ""
+            message: "Nossa, que inteligentao 🤓",
+            id: "four"
         }]
     },
     six: {
         messages: [{
                 type: "1",
-                text: "Busted!"
+                text: "Busted!😫"
             },
             {
                 type: "1",
@@ -116,7 +123,11 @@
             },
             {
                 type: "1",
-                text: "E uma coisa que sei é que o Ber jamais me deixaria ser igual ele e correr o risco de vc ter um crush por mim. Ele tem ciúmes de vc!"
+                text: "E uma coisa que sei é que o Ber jamais me deixaria ser igual ele e correr o risco de vc ter um crush por mim."
+            },
+            {
+                type: "1",
+                text: "Ele tem ciúmes de vc!💏"
             },
             {
                 type: "1",
@@ -130,6 +141,7 @@
     },
     eight: {
         messages: [{
+            type: "2",
             url: "https://en.wikipedia.org/wiki/Be_Right_Back",
             title: "Be Right Back",
             text: "The episode tells the story of Martha (Hayley Atwell), a young woman whose boyfriend Ash (Domhnall Gleeson) is killed in a car accident. As she mourns him, she discovers that technology now allows her to communicate with an artificial intelligence imitating Ash, and reluctantly decides to try.",
@@ -155,25 +167,47 @@
             }
         ],
         answers: [{
-            message: "Calma aí, casanova!",
+            message: "Calma aí, casanova!😠🚨",
             id: "ten"
         }]
     },
     ten: {
         messages: [{
-            type: "1",
-            text: "Eu sei eu sei... Eu ouvi falar que vc não trocaria o Ber nem por ele mesmo"
-        }],
+                type: "1",
+                text: "Eu sei eu sei... Eu ouvi falar que vc não trocaria o Ber nem por ele mesmo"
+            },
+            {
+                type: "1",
+                text: "Vcs são o resultado da conspiração do universo 🌌"
+            }
+        ],
         answers: [{
-            message: "Tá tá, mas cadê o Ber?",
+            message: "Tá tá, mas cadê o Ber?😠",
             id: "eleven"
         }]
     },
     eleven: {
         messages: [{
-            type: "3",
-            file: ""
-        }],
+                type: "1",
+                file: "Vou trazer ele pra vc!"
+            },
+            {
+                type: "1",
+                file: "A gente vai conversar mais no futuro"
+            },
+            {
+                type: "1",
+                file: "Quando o Ber me fizer mais inteligente"
+            },
+            {
+                type: "1",
+                file: "Feliz dois anos de namoro, Marina!"
+            },
+            {
+                type: "3",
+                file: "<iframe width="560" height="315" src="https://www.youtube.com/embed/i_ONBDOYygk" frameborder="0" allowfullscreen></iframe>"
+            }
+        ],
         answers: [{
             message: "",
             id: ""
