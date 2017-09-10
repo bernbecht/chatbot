@@ -276,7 +276,7 @@
 
                 case "2": // link
                     var newMessage = $(
-                        '<li class="cui__list__item cui__list__item--link"><div class="cui__bubble typing animated slideInLeft"><div class="ellipses">...</div><div class="text invisible"><div class="link__teaser"><div class="link__image"><img src="" alt=""></div><div class="link_info"><div class="link__title"></div><div class="link__text"></div></div></div><a href="" class="link__url">Link</a></div></div></li>'
+                        '<li class="cui__list__item cui__list__item--link"><div class="cui__bubble typing animated slideInLeft"><div class="ellipses">...</div><div class="text invisible"><div class="link__teaser"><div class="link__image"><img src="" alt=""></div><div class="link_info"><div class="link__title"></div><div class="link__text"></div></div></div><a href="" target="_blank" class="link__url">Link</a></div></div></li>'
                     );
                     newMessage.find('.link__image img')[0].src = obj.image;
                     newMessage.find('.link__title')[0].innerText = obj.title;
